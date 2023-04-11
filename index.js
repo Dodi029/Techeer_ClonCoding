@@ -7,14 +7,18 @@ import reportWebVitals from './reportWebVitals';
 import Library from './inflearn/JSX-code/Library';
 import Clock from './inflearn/Clock/Clock';
 import CommentList from './inflearn/CommentComponent/CommentList';
+import NotificationList from './chap06/NotificationList';
+import Accommodate from './chap07/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 setInterval(() => {
     root.render(
         <React.StrictMode>
-            <Clock />
+            <Accommodate />
         </React.StrictMode>
     );
-}, 1000)
+})
+
+
 reportWebVitals();
