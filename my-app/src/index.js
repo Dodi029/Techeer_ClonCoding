@@ -4,12 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Library from './inflearn/JSX-code/Library';
+import Clock from './my-app/Clock/Clock';
+import CommentList from './my-app/CommentComponent/CommentList';
+import NotificationList from './my-app/chap06/NotificationList';
+import Accommodate from './my-app/chap07/Accommodate';
+import ConfirmButton from './my-app/chap08/ConfirmButton';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+setInterval(() => {
+    root.render(
+        <React.StrictMode>
+            <ConfirmButton />
+        </React.StrictMode>
+    );
+})
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
