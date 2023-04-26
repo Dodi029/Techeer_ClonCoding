@@ -1,21 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Library from './inflearn/JSX-code/Library';
-import Clock from './my-app/Clock/Clock';
-import CommentList from './my-app/CommentComponent/CommentList';
-import NotificationList from './my-app/chap06/NotificationList';
-import Accommodate from './my-app/chap07/Accommodate';
-import ConfirmButton from './my-app/chap08/ConfirmButton';
+//import Library from './inflearn/JSX-code/Library';
+//import Clock from './my-app/src/Clock/Clock';
+//import CommentList from './my-app/CommentComponent/CommentList';
+//import NotificationList from './my-app/src/chap06/NotificationList';
+//import Accommodate from './my-app/src/chap07/Accommodate';
+//import ConfirmButton from './my-app/src/chap08/ConfirmButton';
+import LandingPage from './chap09/LandingPage';
+import AttendanceBook from './chap10/AttendanceBook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
     root.render(
         <React.StrictMode>
-            <ConfirmButton />
+            <AttendanceBook />
         </React.StrictMode>
     );
 })
