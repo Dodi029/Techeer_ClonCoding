@@ -13,7 +13,7 @@ function Movie({id, year, title, summary, poster, genres}) {
                 {genres.map((genre, index) => (
                     <li key={index} className="genres_genre">{genre}</li>
                 ))}</ul>
-            <p className="movie_summary">{summary.slice(0, 140)}...</p>     {/* 영화 설명 글이 140자만 출력되도록 설정, 140자가 넘어가면 글자를 자름 */}
+            <p className="movie_summary">{summary.slice(0, 180)}...</p>     {/* 영화 설명 글이 180자만 출력되도록 설정, 140자가 넘어가면 글자를 자름 */}
         </div>
     </div>
     );
